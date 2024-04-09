@@ -47,7 +47,7 @@ const SingleInvoices = ({target,id,author,paymentTerms,price,date,type,}: {targe
         <span className="font-bold">£ {price}</span>
       </article>
       <InVoiceTypes type={type} />
-      <img alt="image" onClick={handleClick} src="/arrow-right-icon.svg" className="hidden md:block md:w-5 md:h-5  lg:cursor-pointer"/>
+        <img alt="back" onClick={handleClick} src="/arrow-right-icon.svg" className="hidden md:block md:w-5 md:h-5  lg:cursor-pointer"/>
     </div>
   );
 };
