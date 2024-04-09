@@ -1,6 +1,6 @@
 
 
-const InVoiceTypes = ({type, }: {type: "pending" | "paid" | "draft" | string;}) => {
+const InvoiceTypes = ({type, }: {type: "pending" | "paid" | "draft" | string;}) => {
   return (
     <article className={ "py-[14px] rounded-md flex items-center font-bold capitalize justify-center gap-1 w-[104px] " + (type === "pending"
           ? "bg-pending " : type === "paid" ? "bg-paid "
@@ -18,4 +18,4 @@ const InVoiceTypes = ({type, }: {type: "pending" | "paid" | "draft" | string;}) 
   );
 };
 
-export default InVoiceTypes;
+export default InvoiceTypes;

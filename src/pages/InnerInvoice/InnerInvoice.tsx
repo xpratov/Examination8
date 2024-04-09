@@ -9,7 +9,6 @@ import { onValue, ref, update } from "firebase/database";
 import { realDB } from "../../firebase/firebase";
 import { createPortal } from "react-dom";
 import EditModal from "../../components/EditModal";
-import { toast } from "sonner";
 
 const SingleInVoice = () => {
   const { show, showModal, closeModal } = useContext(ShowModal);
@@ -72,9 +71,7 @@ const SingleInVoice = () => {
           onClick={() => {
             update(ref(realDB, "datas/" + srcParams.id), {
               type: "paid",
-            }).then(() => {
-              toast.success("The invoice type updated !");
-            });
+            })
           }}
         />
       </div>
