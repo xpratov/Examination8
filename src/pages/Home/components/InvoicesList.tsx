@@ -1,5 +1,5 @@
 import Empty from "./Empty";
-import SingleInVoices from "./SingleInVoices";
+import SingleInVoices from "./SingleInvoices";
 
 const InVoices = ({datas,ids,}: {datas: object[] | any[];ids: string[];}) => {
   const getTotalPrice = (e: { items: any[] }) => {
