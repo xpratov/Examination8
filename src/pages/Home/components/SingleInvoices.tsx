@@ -3,7 +3,7 @@ import InVoiceTypes from "./InvoiceTypes";
 
 const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",];
 
-const SingleInVoices = ({target,id,author,paymentTerms,price,date,type,}: {target: string;id: string;author: string;date: string;paymentTerms: string;price: string;type: "paid" | "draft" | "pending" | string;}) => {
+const SingleInvoices = ({target,id,author,paymentTerms,price,date,type,}: {target: string;id: string;author: string;date: string;paymentTerms: string;price: string;type: "paid" | "draft" | "pending" | string;}) => {
 
   const navigate = useNavigate();
 
@@ -52,4 +52,4 @@ const SingleInVoices = ({target,id,author,paymentTerms,price,date,type,}: {targe
   );
 };
 
-export default SingleInVoices;
+export default SingleInvoices;
